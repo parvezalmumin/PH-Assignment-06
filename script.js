@@ -47,3 +47,11 @@ function addToCart(nameId, priceId) {
   cartBox.insertBefore(item, sum)
   updateTotal()
 }
+
+// clear
+allclear.addEventListener("click", function () {
+  cart.length = 0
+  const items = cartBox.querySelectorAll(".flex.justify-between")
+  items.forEach(item => item.remove())
+  updateTotal()
+})
