@@ -68,3 +68,21 @@ document.getElementById("card9").addEventListener("click", () => addToCart("Mari
 document.getElementById("card10").addEventListener("click", () => addToCart("Madhabilata", "Madhabilata-price"))
 document.getElementById("card11").addEventListener("click", () => addToCart("Waterlettuce", "Waterlettuce-price"))
 document.getElementById("card12").addEventListener("click", () => addToCart("Tuberose", "Tuberose-price"))
+
+const cards = document.querySelectorAll(".grid > section")
+const categoryBtns = document.querySelectorAll(".space-y-3 h5")
+categoryBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.innerText.trim()
+
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute("data-category")
+
+      if (category === "All Trees" || cardCategory === category) {
+        card.style.display = "block" 
+      } else {
+        card.style.display = "none" 
+      }
+    })
+  })
+})
