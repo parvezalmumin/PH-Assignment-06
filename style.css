@@ -1,1 +1,156 @@
 
+.inter-sem{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.inter-nor{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-bold{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .nav-bar + section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .nav-bar + section img {
+    display: none; /* hide side leaves for mobile */
+  }
+
+  .nav-bar + section h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Choose Your Trees */
+  
+
+  .ml-15,
+  .mr-15 {
+    margin: 0;
+  }
+
+  section.flex.justify-around {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.flex.justify-around > div:first-child {
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+
+  .grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .grid section {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+  section.flex.justify-around > div:last-child {
+    width: 90%;          /* not full width */
+    max-width: 400px;    /* cart won’t get too wide */
+    margin: 20px auto 0; /* center it */
+    height: 150px;
+  }
+}
+
+
+  .About {
+    padding: 20px !important;
+  }
+
+  .About .flex {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .About img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bg-\[\#CFF0DC\] .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bg-\[\#CFF0DC\] .flex > div {
+    width: 100% !important;
+    height: auto;
+  }
+
+
+  section.bg-\[\#166534\] {
+    padding: 30px 15px;
+  }
+
+  section.bg-\[\#166534\] form {
+    padding: 20px;
+  }
+
+
+  footer p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .nav-bar h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav-bar ul li a {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
